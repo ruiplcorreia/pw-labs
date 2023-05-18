@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dublin</title>
+    <meta name="author" content="Rui Pedro Correia">
+    <meta name="description" content="Website about Dublin">
+    <meta name="keywords" content="Dublin">
+</head>
+
+<body>
+    <header>
+        <h1>Dublin</h1>
+        <img src="images/1.jpg" alt="Trinity College em Dublin">
+    </header>
+    <nav></nav>
+    <main>
+        <section>
+            <p>
+                <b>
+                    <a href="index.html">Introdução</a>
+                    <a href="local.html">Localização</a>
+                    <a href="multimedia.html">Multimedia</a>
+                    <a href="info.html">Informação</a>
+                    <a href="quizz.html">Quizz</a>
+                    <a href="html5-css.html">HTML5</a>
+                </b>
+            </p>
+            <p>
+            <h3>Quizz</h3>
+            </p>
+        </section>
+        <section>
+            <p>Nesta página será feito um quizz para testar se o utilizador conhece bem a cidade de Dublin.</p>
+            <p>
+            <form method="POST" action="mailto: ruiplcorreia@gmail.com" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Mostre que conhece Dublin:</legend>
+                    <fieldset>
+                        <legend>Info</legend>
+                        <label for="fname">Nome</label>
+                        <input type="text" id="fname" name="fname" autocomplete="given-name" placeholder="Nome" required
+                            autofocus><br><br>
+                        <label for="ffamname">Apelido</label>
+                        <input type="text" id="ffamname" name="ffamname" autocomplete="family-name"
+                            placeholder="Apelido" required><br><br>
+                        <label for="femail">Email:</label>
+                        <input type="email" id="femail" name="femail" placeholder="E-mail" required><br><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Perguntas:</legend>
+
+                        <label for="fcname">Qual o nome da capital da Irlanda?</label><br>
+                        <input type="text" id="fcname" name="fcname" size="10"><br><br>
+
+                        <p>Há duas línguas oficiais faladas na Irlanda, quais são?</p>
+                        <input type="radio" id="flangradio1" name="lang" value="flangradio1">
+                        <label for="flangradio1">Inglês e Escocês</label><br>
+                        <input type="radio" id="flangradio2" name="lang" value="flangradio2">
+                        <label for="flangradio2">Inglês e Gaélico</label><br>
+                        <input type="radio" id="flangradio3" name="lang" value="flangradio3">
+                        <label for="flangradio3">Inglês e Português</label>
+
+                        <p>Seleccione abaixo o que se pode ver em Dublin:</p>
+                        <input type="checkbox" id="fcbox1" name="fcbox">
+                        <label for="fcbox1">Unicórnio</label><br>
+
+
+                        <input type="checkbox" id="fcbox2" name="fcbox">
+                        <label for="fcbox2">Pote de ouro na base de um arco-íris</label><br>
+
+                        <input type="checkbox" id="fcbox3" name="fcbox">
+                        <label for="fcbox3">Torre Eiffel</label><br>
+
+                        <input type="checkbox" id="fcbox4" name="fcbox">
+                        <label for="fcbox4">Fábrica da Guiness</label><br>
+
+                        <input type="checkbox" id="fcbox5" name="fcbox">
+                        <label for="fcbox5">Rio Liffey</label><br><br>
+
+                        <label for="fmultiple">Escolha as bandas irlandesas abaixo:</label><br><br>
+                        <select name="fmultiple" id="fmultiple" multiple>
+                            <option value="tcranberries">The Cranberries</option>
+                            <option value="lbizkit">Limp bizkit</option>
+                            <option value="korn">Korn</option>
+                            <option value="u2">U2</option>
+                        </select><br><br>
+
+                        <label for="lweather">Qual o clima da Irlanda:</label><br><br>
+                        <input list="lweather-options" id="lweather" name="lweather">
+                        <datalist id="lweather-options">
+                            <option value="Temperado">
+                            <option value="Equatorial">
+                            <option value="Tropical">
+                            <option value="Subtropical">
+                            <option value="Mediterrâneo">
+                            <option value="Frio">
+                            <option value="Frio de montanha">
+                            <option value="Polar">
+                            <option value="Semiárido">
+                            <option value="Desértico">
+                        </datalist><br>
+
+                        <p>Quando surgiu o dia de Saint Patrick como uma comemoração religiosa?</p>
+                        <input type="date" id="fdate" name="fdate"><br><br>
+
+                        <p>Quem criou a cerveja da imagem abaixo?</p>
+                        <input type="image" id="fimage" name="fimage" src="images/guiness.png"><br><br>
+                        <input type="radio" id="fimgradio1" name="fradio" value="fimgradio1">
+                        <label for="fimgradio1">Paul McGuiness</label><br>
+                        <input type="radio" id="fimgradio2" name="fradio" value="fimgradio2">
+                        <label for="fimgradio2">Michael McGuiness</label><br><br>
+
+                        <p>Quais as cores da bandeira da Irlanda?</p>
+
+                        <input type="color" id="fcolor1" name="color">
+                        <input type="color" id="fcolor2" name="color">
+                        <input type="color" id="fcolor3" name="color"><br><br>
+
+                        <p>Em que ano foi conquistada a independência da Irlanda?</p>
+                        <input type="number" id="fyear" name="fyear" maxlength=4 min="1" max="2023"
+                            placeholder="Ano"><br><br>
+
+                        <label for="fnum">Quantas Irlandas existem?</label><br>
+                        <input type="text" id="fnum" name="fnum" pattern="[0-9]{1}"><br><br>
+
+                        <p>Indique o seu grau de interesse em visitar a Irlanda? (Escala de 1 a 10)</p><br>
+                        <input type="range" id="frange" name="frange" min="0" max="10"><br><br>
+
+                        <p><label for="tcomment">Review of W3Schools:</label></p>
+                        <textarea id="tcomment" name="tcomment" rows="5" cols="50"
+                            placeholder="Deixe o seu comentário."></textarea><br><br>
+
+                    </fieldset>
+
+                    <input type="submit" value="Submit" href="index.html">
+                </fieldset>
+            </form>
+            </p>
+        </section>
+    </main>
+</body>
+<footer>
+    <p>Rui Pedro Correia a21403301 ULHT</p>
+    <p></p>
+</footer>
+
+</html>

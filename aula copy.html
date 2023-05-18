@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <script>
+        function detectar_text() {
+            document.querySelector('input[type]="submit"').disabled = true
+        }
+        function inserir_tarefa() {
+
+            const ul = document.querySelector('ul')
+            const tarefa = document.querySelector('#tarefa')
+            console.log(tarefa.value)
+
+            const li = document.createElement('li')
+            li.innerHTML = tarefa.value
+
+            if (tarefa.value != '') {
+                ul.append(li)
+
+            }
+
+            tarefa.value = ''
+
+            return false
+
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('form').onsubmit = inserir_tarefa
+            document.querySelector('input[type]="submit"').disabled = true
+        })
+
+        document.querySelector('input[type]="submit"').onkeyup
+
+
+
+    </script>
+</head>
+
+
+<body>
+    <h1>Tarefas</h1>
+    <input type="text" id="tarefa">
+    <input type="submit" value="Guardar" disabled>
+</body>
+
+</html>
